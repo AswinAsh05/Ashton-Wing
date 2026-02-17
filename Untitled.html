@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashton Wing | Online Fitness Coaching</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --card: #121212;
+      --gold: #d4af37;
+      --text: #f5f5f5;
+      --muted: #bdbdbd;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1f1f1f;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .hero {
+      padding: 100px 20px;
+      text-align: center;
+      background: radial-gradient(circle at top, #1a1a1a, #000);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 12px 28px;
+      border: 2px solid var(--gold);
+      background: transparent;
+      color: var(--gold);
+      text-decoration: none;
+      border-radius: 30px;
+      margin: 5px;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: var(--gold);
+      color: #000;
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 28px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 14px;
+      border: 1px solid #1f1f1f;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      border-color: var(--gold);
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    .about {
+      text-align: center;
+      color: var(--muted);
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .cta {
+      text-align: center;
+      background: linear-gradient(135deg, #111, #000);
+      border-radius: 16px;
+      padding: 40px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      border-top: 1px solid #1f1f1f;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">ASHTON WING</div>
+    <nav>
+      <a href="#programs">Programs</a>
+      <a href="#about">About</a>
+      <a href="#join">Join</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Transform with <span>Ashton Wing</span></h1>
+    <p>Online Fitness Coaching • Natural Transformation • Sustainable Results</p>
+    <a class="btn" href="#programs">View Programs</a>
+    <a class="btn" href="#join">Join Coaching</a>
+  </section>
+
+  <section id="programs">
+    <div class="section-title">Programs</div>
+    <div class="cards">
+      <div class="card">
+        <h3>Fat Loss</h3>
+        <p>Structured diet + training plan focused on sustainable fat reduction.</p>
+      </div>
+      <div class="card">
+        <h3>Lean Bulk</h3>
+        <p>Muscle gain strategy with minimal fat accumulation.</p>
+      </div>
+      <div class="card">
+        <h3>Home Workout</h3>
+        <p>Effective routines designed for limited equipment environments.</p>
+      </div>
+      <div class="card">
+        <h3>Personal Coaching</h3>
+        <p>1‑to‑1 transformation guidance with weekly monitoring.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-title">About Ashton Wing</div>
+    <p class="about">
+      Ashton Wing is a natural physique transformation coach focused on realistic, science‑based fitness.
+      Specializing in fat loss, lean bulking, and sustainable body recomposition, the coaching approach
+      emphasizes consistency, discipline, and long‑term results without extreme methods.
+    </p>
+  </section>
+
+  <section id="join">
+    <div class="cta">
+      <h2 style="margin-bottom:15px">Start Your Transformation</h2>
+      <p style="margin-bottom:25px;color:var(--muted)">
+        Apply for Ashton Wing coaching and receive a personalized plan.
+      </p>
+      <a class="btn" href="https://forms.gle/faj8BzkmwRpd9rKe9" target="_blank" rel="noopener noreferrer" onclick="window.open('https://forms.gle/faj8BzkmwRpd9rKe9','_blank')">Apply Now</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Ashton Wing • Online Fitness Coaching
+  </footer>
+
+</body>
+</html>
